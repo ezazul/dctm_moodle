@@ -32,20 +32,31 @@ Date Downloaded: 5/22/2018 4:58:06 PM !-->
 
 
                  <div class="p-20">
-                     <form class="form-horizontal m-t-20" action="index.html">
+			 <!----------------------->
+                     	 <form class="form-horizontal m-t-20" action="index.php" method="POST">
 
                          <div class="form-group ">
                              <div class="col-12">
-                                 <input class="form-control" type="text" required="" placeholder="Username" />
+                                 <input class="form-control" name="email" type="text" required="" placeholder="Username" />
                              </div>
                          </div>
 
                          <div class="form-group">
                              <div class="col-12">
-                                 <input class="form-control" type="password" required="" placeholder="Password" />
+                                 <input class="form-control" name="password" type="password" required="" placeholder="Password" />
                              </div>
                          </div>
-
+						 <div class="form-group">
+                             <div class="col-12">
+                                 <select class="form-control" name="type" required="">
+									<option value="0">Role</option>
+									<option value="admin">Admin</option>
+									<option value="faculty">Faculty</option>
+									
+								 </select>
+                             </div>
+                         </div>
+						
                          <div class="form-group ">
                              <div class="col-12">
                                  <div class="checkbox checkbox-primary">
@@ -57,10 +68,14 @@ Date Downloaded: 5/22/2018 4:58:06 PM !-->
 
                              </div>
                          </div>
-
+						 <div class="form-group " style="text-align: center; color: red">
+                             <?php
+								echo $error_msg;
+							 ?>
+                         </div>
                          <div class="form-group text-center m-t-40">
                              <div class="col-12">
-                                 <button class="btn btn-pink btn-block text-uppercase waves-effect waves-light" type="submit">Log In
+                                 <button class="btn btn-pink btn-block text-uppercase waves-effect waves-light" type="submit" name="login_btn">Log In
                                  </button>
                              </div>
                          </div>
@@ -71,7 +86,7 @@ Date Downloaded: 5/22/2018 4:58:06 PM !-->
                              </div>
                          </div>
                      </form>
-
+			<!--------------------------------->
                  </div>
              </div>
              <div class="row">

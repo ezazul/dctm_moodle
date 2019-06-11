@@ -32,7 +32,6 @@ Date Downloaded: 5/22/2018 4:58:06 PM !-->
 
 
                  <div class="p-20">
-			 <!----------------------->
                      	 <form class="form-horizontal m-t-20" action="index.php" method="POST">
 
                          <div class="form-group ">
@@ -86,7 +85,6 @@ Date Downloaded: 5/22/2018 4:58:06 PM !-->
                              </div>
                          </div>
                      </form>
-			<!--------------------------------->
                  </div>
              </div>
              <div class="row">
